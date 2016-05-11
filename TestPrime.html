@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to test, if X is prime... or not.</p>
+
+<button onclick="IsItPrime()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function IsItPrime()
+{
+
+var x = 2498746843;
+var p;
+var i;
+
+for (var i = 2; i < x; i++) {
+
+if (x % i == 0) {
+document.getElementById("demo").innerHTML =  x + " is not a prime! Divisible by " + i + ".";
+break;
+}
+
+if (x % i != 0)
+{
+document.getElementById("demo").innerHTML ="Yes, " + x + " is prime!";
+}
+
+}
+
+}
+</script>
+
+
+
+</body>
+</html>

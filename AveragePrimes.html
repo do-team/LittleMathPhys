@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the approximate amount of prime numbers between 0 and X. It also gives you average distance between primes.</p>
+
+<button onclick="PrimeApprox()">Try it</button>
+
+<p>For X equals to <span id = "demo">?</span> you will find approximately <span id="demo1"></span> prime numbers.</p>
+<p>With average distance between primes: <span id="demo2"></span>.</p>
+
+<script>
+function PrimeApprox()
+{
+
+var x = 10000;
+var y = Math.log(x);
+var i = x / y;
+var z = x / i;
+
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo1").innerHTML = i;
+document.getElementById("demo2").innerHTML = z;
+
+}
+</script>
+
+</body>
+</html>

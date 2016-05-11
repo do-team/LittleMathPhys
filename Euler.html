@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the Euler's constant.</p>
+
+<button onclick="EulersNumber()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function EulersNumber() {
+var x=1000000;
+var y=1+(1/x);
+    document.getElementById("demo").innerHTML = Math.pow(y, x);
+}
+</script>
+
+</body>
+</html>
