@@ -4,19 +4,21 @@
 
 <p>Enter the number and click the button to test, if the number is prime... or not.</p>
 
-<input id="input" type=text value="">
+<input id="input" type=text value="0" />
+
 
 <button onclick="IsItPrime()">Try it</button>
 
 
-<p id="demo"></p>
+<p id="demo">Is your number really a prime number?</p>
 
 
 
 <script>
 function IsItPrime()
 {
-var x = document.getElementById("input");
+
+var x = document.getElementById("input").value;
 var p;
 var i;
 
