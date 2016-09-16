@@ -2,24 +2,21 @@
 <html>
 <body>
 
-<p>Click the button to test, if X is prime... or not.</p>
+<p>Enter the number and click the button to test, if the number is prime... or not.</p>
+
+<input id="input" type=text value="">
 
 <button onclick="IsItPrime()">Try it</button>
 
-<input name="input" type=text value=x>
 
-<p id="demo">
-
-
-</p>
+<p id="demo"></p>
 
 
 
 <script>
 function IsItPrime()
 {
-
-var x;
+var x = document.getElementById("input");
 var p;
 var i;
 
