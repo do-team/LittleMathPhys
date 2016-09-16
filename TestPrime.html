@@ -22,6 +22,14 @@ var x = document.getElementById("input").value;
 var p;
 var i;
 
+if (x = 1) {
+document.getElementById("demo").innerHTML = "Well, number 1 is measuring unit, so it cannot be considered as prime number (see <a href="https://www.youtube.com/watch?v=IQofiPqhJ_s">this video for more details</a>).";
+}
+
+if (x = 2) {
+document.getElementById("demo").innerHTML = "Yes, number 2 is a prime!";
+}
+
 for (var i = 2; i < x; i++) {
 
 if (x % i == 0) {
