@@ -4,7 +4,7 @@
 
 <p>Enter the number and click the button to test, if the number is prime... or not.</p>
 
-<input id="input" type=text value="0" />
+<input id="input" type=text value="" />
 
 
 <button onclick="IsItPrime()">Try it</button>
@@ -28,7 +28,7 @@ return;
 }
 
 if (x == 1) {
-document.getElementById("demo").innerHTML = "Well, number 1 is measuring unit, so it cannot be considered as prime number";
+document.getElementById("demo").innerHTML = "<i>Well, number 1 is measuring unit, so it cannot be considered as prime number.</i>";
 return;
 }
 
@@ -54,7 +54,7 @@ document.getElementById("demo").innerHTML ="<b>Yes, " + x + " is a prime!</b>";
 }
 </script>
 
-Known bugs: Zero, negative numbers and number with 15+ places are not going to be recognised.
+<!-- Known bugs: Zero, negative numbers and number with 15+ places are not going to be recognised. -->
 
 </body>
 </html>
